@@ -458,6 +458,12 @@ code {
 
 .contact-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
 
+.contact-noscript {
+  margin: 1.2rem 0 0;
+  font-size: 0.95rem;
+  color: var(--text-dim);
+}
+
 .contact-note {
   margin-top: 2rem;
   font-size: 0.92rem;

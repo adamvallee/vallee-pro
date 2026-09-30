@@ -8,6 +8,15 @@
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  // Contact email: assembled at runtime (base64) so harvesting bots
+  // can't scrape the address out of the HTML source.
+  var emailLink = document.getElementById("contactEmail");
+  if (emailLink) {
+    var email = atob("YWRhbUB2YWxsZWUucHJv");
+    emailLink.href = "mailto:" + email;
+    emailLink.textContent = email;
+  }
+
   // Respect reduced motion: if the user prefers it, skip animations entirely.
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
   if (reduce.matches) return;

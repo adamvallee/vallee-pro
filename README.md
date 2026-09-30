@@ -29,7 +29,7 @@ Everything is plain files — no CMS needed:
 | Page text/sections | `public/index.html` |
 | Colours, spacing, fonts | `public/styles.css` |
 | Animations | `public/script.js` |
-| Contact email | search for `mailto:` in `public/index.html` |
+| Contact email | `public/script.js` — base64 string in the `contactEmail` block (never in the HTML, so bots can't harvest it) |
 
 ## Structure
 
