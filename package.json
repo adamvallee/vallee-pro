@@ -1,0 +1,16 @@
+{
+  "name": "vallee-pro",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal website of Adam D. Vallée — union president, postal worker, technologist. Served on vallee.pro.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
